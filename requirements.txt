@@ -10,3 +10,5 @@ pytest==5.4.2
 pytest-cov==2.8.1
 Flask-Testing==0.8.0
 virtualenv==20.0.21
+sudo apt update
+sudo apt install -y curl
