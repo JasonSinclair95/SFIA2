@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, Response
 from application import app 
 import requests
 
