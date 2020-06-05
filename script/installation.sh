@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source ~/.bashrc
 sudo apt update -y
 sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
 sudo apt-get install default-jdk
@@ -12,4 +12,5 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo systemctl status docker
 sudo usermod -aG docker $USER
-source ~/.bashrc
+
+
