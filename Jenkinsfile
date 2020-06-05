@@ -1,16 +1,17 @@
 pipeline{
     agent any
-    stages{
-        stage("Enable my script folder to be executable"){
-            steps{
+    stages {
+        stage("Enable my script folder to be executable") {
+            steps {
                sh "chmod +x ./script/*"
             }
         }
-        stage(' Prepair enviornment')
+        stage(' Prepair enviornment') {
             steps{
                 sh './script/installation,sh'
             }
-        stage('depoly application through docker compose'){
+        }    
+        stage('depoly application through docker compose') {
             steps{
                 sh 'docker-compose down' 
                 sh 'sleep 5'
