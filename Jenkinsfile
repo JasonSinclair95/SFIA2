@@ -8,7 +8,7 @@ pipeline{
         }
         stage(' Prepair enviornment') {
             steps{
-                sh './script/installation,sh'
+                sh './script/installation.sh'
             }
         }    
         stage('depoly application through docker compose') {
