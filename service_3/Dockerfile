@@ -1,6 +1,6 @@
 FROM python:alpine3.11
 
-RUN mkdir ./opt/servic3
+RUN mkdir ./opt/service3
 
 COPY . /opt/service3
 
