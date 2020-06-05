@@ -1,13 +1,20 @@
-pipeline {
+pipeline{
     agent any
     stages {
-        stage('Development environment'){
-            steps{
-                sh 'chmod +x ./script/*'
-                sh './script/jenks.sh'
-            }
-        
+        stage("Enable my script folder to be executable") {
+            steps {
+               sh "chmod +x ./script/*"
             }
         }
-        
+        stage(' Prepair enviornment') {
+            steps{
+                sh './script/installation.sh'
+            }
+        }    
+        stage('depoly application through docker compose') {
+            steps{
+                sh './script/deploy_app.sh'   
+            }
+        }
     }
+}
