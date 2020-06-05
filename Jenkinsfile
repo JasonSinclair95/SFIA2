@@ -13,11 +13,7 @@ pipeline{
         }    
         stage('depoly application through docker compose') {
             steps{
-                sh 'source ~/.bashrc'
-                sh 'docker-compose down' 
-                sh 'sleep 5'
-                sh 'docker-compose up --build -d'
-                sh 'sleep 15'     
+                sh './script/deploy_app.sh'   
             }
         }
     }
