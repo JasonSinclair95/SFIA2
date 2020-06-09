@@ -7,4 +7,4 @@ echo 'PATH=$PATH:~/.local/bin' >> ~/.bashrc
 pip3 install --user ansible
 ansible --version
 
-ansible-playbook -i inventory.cfg playbook.yml
+ansible-playbook -i inventory.cfg playbook.yaml
