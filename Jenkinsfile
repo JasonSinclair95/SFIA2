@@ -10,13 +10,8 @@ pipeline{
             steps{
                 sh './script/installation.sh'
                 sh './script/ansible.sh'
+                sh './script/deploy_app.sh'
             }
         }    
-        stage('depoly application through docker compose') {
-            agent { label 'Recruitmenyt_vm'}
-            steps{
-                sh './script/deploy_app.sh'   
-            }
-        }
     }
 }
