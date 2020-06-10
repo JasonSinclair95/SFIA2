@@ -47,15 +47,15 @@ services:
     deploy:
             replicas: 2
   nginx:
-        image: jasonsinclair95/sfia2:nginx
-        ports:
-            - "80:80"
-        networks: sfia2_network
-            - 
-        depends_on:
-            - service_1
-            - service_2
-            - service_3
-            - service_4
-        deploy:
-            replicas: 2
+    image: jasonsinclair95/sfia2:nginx
+    ports:
+      - "80:80"
+    networks: 
+      - sfia2_network
+    depends_on:
+      - service_1
+      - service_2
+      - service_3
+      - service_4
+    deploy:
+      replicas: 2
