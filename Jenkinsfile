@@ -13,6 +13,7 @@ pipeline{
             }
         }    
         stage('depoly application through docker compose') {
+            agent { label 'Recruitmenyt_vm'}
             steps{
                 sh './script/deploy_app.sh'   
             }
