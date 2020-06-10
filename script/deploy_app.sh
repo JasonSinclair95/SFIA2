@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo source ~/.bashrc
+sudo . ~/.bashrc
 
 docker stack deploy --compose-file docker-compose.yaml sfia2
