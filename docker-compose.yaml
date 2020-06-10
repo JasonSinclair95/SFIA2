@@ -58,4 +58,4 @@ services:
       - service_3
       - service_4
     deploy:
-      replicas: 2
+            replicas: 2
