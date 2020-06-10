@@ -53,9 +53,11 @@ services:
     networks: 
       - sfia2_network
     depends_on:
-      - service_1
-      - service_2
-      - service_3
-      - service_4
+      - service1
+      - service2
+      - service3
+      - service4
     deploy:
             replicas: 2
+  
+
