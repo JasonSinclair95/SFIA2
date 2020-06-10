@@ -4,8 +4,16 @@
   roles:
     - install-docker
 
+- name: install docker localhost
+  hosts: 127.0.0.1
+  connection : local
+  become: true
+  roles:
+    - install-docker
+
 - name: add manager and intialise swarm
-  hosts: manager-node
+  hosts: 127.0.0.1
+  connection: local
   become: true
   roles:
     - docker-swarm-init
@@ -15,3 +23,4 @@
   become: true
   roles:
     - add-worker-nodes
+  
