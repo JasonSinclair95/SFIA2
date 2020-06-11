@@ -24,6 +24,9 @@ services:
       - target: 5001
         published: 5001
         protocol: tcp
+    environment:
+      - RECRUITMENT_VM_DB_URI=${RECRUITMENT_VM_DB_URI}
+      - SECRET_KEY=${SECRET_KEY}
     networks:
       - sfia2_network
     deploy:
@@ -35,6 +38,9 @@ services:
       - target: 5002
         published: 5002
         protocol: tcp
+    environment:
+      - RECRUITMENT_VM_DB_URI=${RECRUITMENT_VM_DB_URI}
+      - SECRET_KEY=${SECRET_KEY}
     networks:
       - sfia2_network
     deploy:
@@ -46,6 +52,9 @@ services:
       - target: 5003
         published: 5003
         protocol: tcp
+    environment:
+      - RECRUITMENT_VM_DB_URI=${RECRUITMENT_VM_DB_URI}
+      - SECRET_KEY=${SECRET_KEY}
     networks:
       - sfia2_network    
     deploy:

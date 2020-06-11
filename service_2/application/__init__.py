@@ -9,6 +9,5 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY']=getenv('SECRET_KEY')
 db = SQLAlchemy(app)
 
-from application.models import Car
 
 from application import routes

@@ -3,7 +3,7 @@ from application import app, db
 import requests
 import random 
 from flask_sqlalchemy import SQLAlchemy
-
+from os import getenv
 from application.models import Car
 
 @app.route('/', methods=['GET', 'POST'])
