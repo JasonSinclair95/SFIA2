@@ -42,6 +42,8 @@ services:
       - target: 5003
         published: 5003
         protocol: tcp
+    deploy:
+      replicas: 2
   nginx:
     image: jasonsinclair95/sfia2:nginx
     ports:
@@ -54,5 +56,7 @@ services:
       target: /etc/nginx/nginx.conf
     networks:
     - sfia2_network
+    deploy:
+      replicas: 2
   
 
