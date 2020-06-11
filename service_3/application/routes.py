@@ -12,7 +12,7 @@ from random import randint
 
 @app.route('/', methods=['GET', 'POST'])
 def weapon():
-    rand = random.randint(0,5)
+    rand = random.randint(1,6)
     getWeapon = Weapon.query.filter_by(id=rand).first()
     print(getWeapon)
     return str(getWeapon)

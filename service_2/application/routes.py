@@ -5,7 +5,7 @@ from random import randint
 
 @app.route('/', methods=['GET', 'POST'])
 def car():
-    rand = random.randint(0,4)
+    rand = random.randint(1,5)
     getCar = Car.query.filter_by(id=rand).first()
     print(getCar)
     return str(getCar)
