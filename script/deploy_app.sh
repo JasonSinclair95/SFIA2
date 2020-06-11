@@ -3,6 +3,8 @@
  
 docker-compose build
  
+docker push jasonsinclair95/sfia2:nginx
+  
 docker push jasonsinclair95/sfia2:service1
  
 docker push jasonsinclair95/sfia2:service2
