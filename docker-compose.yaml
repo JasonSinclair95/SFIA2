@@ -42,6 +42,8 @@ services:
       - target: 5003
         published: 5003
         protocol: tcp
+    networks:
+      - sfia2_network    
     deploy:
       replicas: 2
   nginx:
