@@ -16,7 +16,7 @@ def carconfig():
     )    
     db.session.add(output)
     db.session.commit()
-    response = "your car is" + " " + car.text + " and your special weapon is " + weapon.text
+    response = "your car is" + " " + car + " and your special weapon is " + weapon
     return response
 
 
