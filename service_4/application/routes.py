@@ -10,7 +10,7 @@ from application.models import CarConfig
 def carconfig():
     car = requests.get('http://service2:5001/').text
     weapon = requests.get('http://service3:5002/').text
-    output = CarsConfig(
+    output = CarConfig(
         car = car,
         weapon = weapon
     )    
