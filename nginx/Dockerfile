@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:stable
 
 WORKDIR /etc/nginx/
 RUN apt update -y
