@@ -2,6 +2,8 @@ from flask import render_template, Flask, request, url_for, redirect
 from application import app 
 import requests
 
+from application.models import CarConfig
+
 @app.route('/', methods=['GET'])
 @app.route('/home')
 def home():
