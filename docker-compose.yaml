@@ -5,6 +5,7 @@ networks:
 services:
   service1:
     image: jasonsinclair95/sfia2:service1
+    build: service_1/
     ports:
       - target: 5000
         published: 5000
@@ -18,6 +19,7 @@ services:
             replicas: 2
   service2:
     image: jasonsinclair95/sfia2:service2
+    build: service_2/
     ports:
       - target: 5001
         published: 5001
@@ -28,6 +30,7 @@ services:
             replicas: 2
   service3:
     image: jasonsinclair95/sfia2:service3
+    build: service_3/
     ports:
       - target: 5002
         published: 5002
@@ -38,6 +41,7 @@ services:
             replicas: 2
   service4:
     image: jasonsinclair95/sfia2:service4
+    build: service_4/
     ports:
       - target: 5003
         published: 5003
@@ -48,6 +52,7 @@ services:
       replicas: 2
   nginx:
     image: jasonsinclair95/sfia2:nginx
+    build: nginx/
     ports:
     - target: 80
       published: 80
