@@ -11,7 +11,7 @@ from application.models import CarConfig
 def home():
         carconfigData = CarConfig.query.all()
         response = requests.get('http://service4:5003/').text
-        return render_template('home.html', car=carconfigData, display=response, title='Home')
+        return render_template('home.html', car=carconfigData, display=response, title='Genarte a car and weapons')
 
 
 
