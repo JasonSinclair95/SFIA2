@@ -13,3 +13,22 @@
 </body>
 
 {% endblock body_content %}
+<html>
+<button onClick="window.location.reload();">Generate</button>
+        <br>
+        <table style="margin-left:auto;margin-right:auto;">
+            <tr>
+                <th>ID</th>
+                <th>Car</th>
+                <th>Weapon</th>
+            </tr>
+            {% for c in cars %}
+            <tr>
+                <td>{{ c.id }}</td>
+                <td>{{ c.car }}</td>
+                <td>{{ c.weapon }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html> 

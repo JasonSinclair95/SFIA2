@@ -3,10 +3,10 @@ from application import app
 import requests
 
 @app.route('/', methods=['GET'])
+@app.route('/home')
 def home():
-        response = requests.get('http://service4:5003/CarAndWeapon')
+        carsconfigData = CarsConfig.query.all()
+        response = requests.get('http://service4:5003/')
         generate_vehicle_config = response.text
-        print(generate_vehicle_config)
-        return render_template('home.html', generate_vehicle_config = generate_vehicle_config, title='Home')
+        return render_template('home.html', generate_vehicle_config = generate_vehicle_config, cars =carsconfigData title='Home')
 
- 
