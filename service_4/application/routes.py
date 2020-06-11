@@ -5,6 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 from os import getenv
 
 from application.models import CarConfig
+
 @app.route('/', methods=['GET', 'POST'])
 def carconfig():
     car = requests.get('http://service2:5001/').text
