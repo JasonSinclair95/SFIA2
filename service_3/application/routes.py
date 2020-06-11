@@ -1,7 +1,7 @@
 from flask import render_template, Flask, request, url_for, redirect, Response
 from application import app, db
 import requests
-from random 
+import random 
 from flask_sqlalchemy import SQLAlchemy
 
 from application.models import Weapon

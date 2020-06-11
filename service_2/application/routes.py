@@ -1,10 +1,11 @@
 from flask import render_template, Flask, request, url_for, redirect, Response
 from application import app, db
 import requests
-from random 
+import random 
 from flask_sqlalchemy import SQLAlchemy
 
 from application.models import Car
+
 @app.route('/', methods=['GET', 'POST'])
 def car():
     rand = random.randint(1,5)
