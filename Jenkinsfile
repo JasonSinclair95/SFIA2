@@ -9,6 +9,7 @@ pipeline{
         stage(' Prepair enviornment') {
             steps{
                 sh './script/installation.sh'
+                sh './script/ansible.sh'
             }
         }    
         stage('depoly application through docker compose') {
