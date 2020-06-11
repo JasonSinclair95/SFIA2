@@ -42,8 +42,8 @@ services:
       - target: 5003
         published: 5003
         protocol: tcp
-    nginx:
-    image: nginx:latest
+  nginx:
+    image: jasonsinclair95/sfia2:nginx
     ports:
     - target: 80
       published: 80
