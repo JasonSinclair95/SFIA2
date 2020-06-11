@@ -1,5 +1,5 @@
 from flask import render_template, Flask, request, url_for, redirect, Response
-from application import app 
+from application import app, db
 import requests
 from random import randint 
 from flask_sqlalchemy import SQLAlchemy

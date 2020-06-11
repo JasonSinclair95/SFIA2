@@ -1,5 +1,5 @@
 from flask import render_template, Flask, request, url_for, redirect
-from application import app 
+from application import app, db
 import requests
 from flask_sqlalchemy import SQLAlchemy
 from os import getenv
