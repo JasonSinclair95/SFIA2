@@ -4,6 +4,8 @@ import requests
 from random 
 from flask_sqlalchemy import SQLAlchemy
 
+from application.models import Weapon
+
 @app.route('/', methods=['GET', 'POST'])
 def weapon():
     rand = random.randint(1,6)

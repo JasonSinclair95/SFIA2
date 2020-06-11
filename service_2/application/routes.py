@@ -4,6 +4,7 @@ import requests
 from random 
 from flask_sqlalchemy import SQLAlchemy
 
+from application.models import Car
 @app.route('/', methods=['GET', 'POST'])
 def car():
     rand = random.randint(1,5)
