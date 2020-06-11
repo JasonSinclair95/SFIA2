@@ -66,6 +66,9 @@ services:
     - target: 80
       published: 80
       protocol: tcp
+    environment:
+      SFIA2_DB_URI: ${SFIA2_DB_URI}
+      SECRET_KEY: ${SECRET_KEY}
     networks:
     - sfia2_network
     deploy:
