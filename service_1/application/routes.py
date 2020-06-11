@@ -5,8 +5,8 @@ import requests
 @app.route('/', methods=['GET'])
 @app.route('/home')
 def home():
-        carsconfigData = CarsConfig.query.all()
+        carconfigData = CarConfig.query.all()
         response = requests.get('http://service4:5003/')
         generate_vehicle_config = response.text
-        return render_template('home.html', generate_vehicle_config = generate_vehicle_config, cars =carsconfigData title='Home')
+        return render_template('home.html', generate_vehicle_config = generate_vehicle_config, car =carconfigData title='Home')
 
