@@ -16,8 +16,9 @@ def home():
 @app.route('/Delete/<id>/CarConfig/', methods=['GET','POST'])
 def DeleteCarConfig(id):
 	carconfigData = CarConfig.query.filter_by(id=id).first()
-	allconfigs = CarConfig.query.all()
-	for c in allconfigs:
-		db.session.delete(c)
+	
+	
+	db.session.delete(job_post)
+
 	db.session.commit()
 	return redirect(url_for('home'))
