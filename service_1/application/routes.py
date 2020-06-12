@@ -21,8 +21,7 @@ def carconfigs():
 @app.route('/Delete/<id>/CarConfig/', methods=['GET','POST'])
 def DeleteCarConfig(id):
         carconfigsData = CarConfig.query.filter_by(id=id).first()
-        for c in carconfigData:
-                 db.session.delete(carconfigsData)
+        db.session.Delete(carconfigs)
         db.session.commit()
         return render_template('carconfigs.html', car=carconfigData, title='carconfigs')
        
