@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block body_content %}
+<title>
+    {{ title }}
+</title>
+<br>
+<p>Take a look below at previous car configurations </p>
+<br>
+{% for c in car %}
+<div>
+            <tr>
+                
+                <td>{{ c.car }}</td>
+                <td>{{ c.weapon }}</td>
+            </div>
+            <form action= "{{ url_for( 'DeleteCarConfig', id=c.id) }}">	
+                <button type='submit'> Delete car configuration</button>
+                </form>
+{% endfor %}
+{% endblock %}
