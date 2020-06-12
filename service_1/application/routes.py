@@ -15,8 +15,7 @@ def home():
 
 @app.route('/Delete/<id>/CarConfig/', methods=['GET','POST'])
 def DeleteCarConfig(id):
-	carconfigData = CarConfig.query.filter_by(id).first()
-	application = JobApplications.query.filter_by(Job_id=id).all()
+	carconfigData = CarConfig.query.filter_by(id=id).first()
 	
 	for c in carconfigData:
 		db.session.delete(c)
