@@ -23,7 +23,7 @@ def DeleteCarConfig(id):
         carconfigsData = CarConfig.query.filter_by(id=id).first()
         db.session.Delete(carconfigsData)
         db.session.commit()
-        return redirect{url_for(carconfigs)}
+        return redirect(url_for(carconfigs))
        
 
 	
