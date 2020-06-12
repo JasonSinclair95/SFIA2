@@ -11,10 +11,16 @@ from application.models import CarConfig
 def home():
         carconfigData = CarConfig.query.all()
         response = requests.get('http://service4:5003/').text
-
-        carconfigsData = CarConfig.query.filter_by(id=id).first()
-        db.session.delete(carconfigsData)
-	db.session.commit()
         return render_template('home.html', car=carconfigData, display=response, title='Home')
         
+
+@app.route('/Delete/<id>/CarConfig/', methods=['GET','POST'])
+def DeleteCarConfig(id):
+	carconfigData = CarConfig.query.filter_by(id=id).first()
+	
+	
+	db.session.delete(carconfigData)
+
+	db.session.commit()
+	return redirect(url_for('home'))
 
