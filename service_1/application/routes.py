@@ -18,7 +18,8 @@ def home():
 def DeleteCarConfig(id):
         carconfigData = CarConfig.query.all()
         carconfigsData = CarConfig.query.filter_by(id=id).first()
-        db.session.delete(carconfigsData)
+        for c in carconfigData:
+                 db.session.delete(carconfigsData)
         db.session.commit()
         return render_template('carconfigs.html', car=carconfigData, title='carconfigs')
        
