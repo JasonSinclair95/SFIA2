@@ -21,7 +21,7 @@ def carconfigs():
 @app.route('/Delete/<id>/CarConfig/', methods=['GET','POST'])
 def DeleteCarConfig(id):
         carconfigsData = CarConfig.query.filter_by(id=id).first()
-        db.session.Delete(carconfigsData)
+        db.session.delete(carconfigsData)
         db.session.commit()
         return redirect(url_for('carconfigs'))
        
