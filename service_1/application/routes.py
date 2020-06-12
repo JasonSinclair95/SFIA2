@@ -4,7 +4,7 @@ import requests
 from flask_sqlalchemy import SQLAlchemy
 from os import getenv
 
-from application.models import CarConfig
+from service_4.application.models import CarConfig
 
 @app.route('/', methods=['GET'])
 @app.route('/home')
