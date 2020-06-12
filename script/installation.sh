@@ -1,4 +1,5 @@
 #!/bin/bash
+. ~/.bashrc
 sudo apt update -y
 sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
 sudo apt-get install default-jdk

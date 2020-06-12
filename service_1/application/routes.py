@@ -1,12 +1,17 @@
 from flask import render_template, Flask, request, url_for, redirect
-from application import app 
+from application import app, db
 import requests
+from flask_sqlalchemy import SQLAlchemy
+from os import getenv
+
+from application.models import CarConfig
 
 @app.route('/', methods=['GET'])
+@app.route('/home')
 def home():
-        response = requests.get('http://service4:5003/CarAndWeapon')
-        generate_vehicle_config = response.text
-        print(generate_vehicle_config)
-        return render_template('home.html', generate_vehicle_config = generate_vehicle_config, title='Home')
+        carconfigData = CarConfig.query.all()
+        response = requests.get('http://service4:5003/').text
+        return render_template('home.html', car=carconfigData, display=response, title='Home')
 
- 
+
+
