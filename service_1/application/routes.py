@@ -21,4 +21,4 @@ def DeleteCarConfig(id):
 	db.session.delete(carconfigData)
 
 	db.session.commit()
-	return render_template('home.html', car=carconfigData, display=response, title='Home')
+	return render_template('home.html')
