@@ -13,5 +13,12 @@ def home():
         response = requests.get('http://service4:5003/').text
         return render_template('home.html', car=carconfigData, display=response, title='Home')
 
-
-
+@app.route('/Delete/<id>/CarConfig/', methods=['GET','POST'])
+def DeleteCarConfig(id):
+	carconfigData = CarConfig.query.filter_by(id).first()
+	application = JobApplications.query.filter_by(Job_id=id).all()
+	
+	for c in carconfigData:
+		db.session.delete(c)
+	db.session.commit()
+	return redirect(url_for('home'))

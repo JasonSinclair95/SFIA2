@@ -16,5 +16,9 @@
                 <td>{{ c.car }}</td>
                 <td>{{ c.weapon }}</td>
             </div>
+            <form action= "{{ url_for( 'DeleteCarConfig', id=post.id) }}">	
+                <button type='submit'> Apply for job</button>
+                </form>
 {% endfor %}
 {% endblock %}
+
