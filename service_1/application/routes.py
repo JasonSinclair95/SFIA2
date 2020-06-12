@@ -21,4 +21,4 @@ def DeleteCarConfig(id):
 	db.session.delete(carconfigData)
 
 	db.session.commit()
-	return redirect(url_for('home'))
+	return 
