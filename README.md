@@ -59,6 +59,8 @@ DevOps Core Practical Project Specification
 
 ![](Documents/ci-pipline-2.png)
 
+![](Documents/Logs-Progress.png)
+
 ### service architecture
 
 ![](Documents/Service-pipline.png)
@@ -79,23 +81,28 @@ DevOps Core Practical Project Specification
 ![](Documents/Risk-revisited.png)
 ### Testing 
 
+
 ![](Documents/Test1.png)
-![](Documents/ci-pipline-1.png)
+![](Documents/Service1-test-result.png)
 
 
-(Documents/Test2.png)
-![](Documents/ci-pipline-1.png)
+
+![](Documents/Test2.png)
+![](Documents/Service2-test-result.png)
 
 
-(Documents/Test3.png)
-![](Documents/ci-pipline-1.png)
+
+![](Documents/Test3.png)
+![](Documents/Service3-test-result.png)
 
 
-(Documents/Test4.png)
-![](Documents/ci-pipline-1.png)
+![](Documents/Test4.png)
+![](Documents/Service4-test-result.png)
+
+## conclusion
 
 ## MIT License
-
+![](Documents/Feature.png)
 Copyright (c) 2020 JasonSinclair95
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
