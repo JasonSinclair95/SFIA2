@@ -36,8 +36,63 @@ DevOps Core Practical Project Specification
 8. [license](#Mit-Licence)
 
 ---
+## Executive-Summary-&-Critical-Review
+### Aim
 
+### My Method
+
+![](Documents/Home-page.png)
+
+
+![](Documents/persiting-data.png)
+
+
+## Architecture
+
+### Entity Relation ship diargram
+
+![](Documents/SFIA2-Entity-Relationship.png)
+
+### Ci Pipeline
+
+![](Documents/ci-pipline-1.png)
+
+![](Documents/ci-pipline-2.png)
+
+### service architecture
+
+![](Documents/Service-pipline.png)
+
+### Trello Board
+
+![](Documents/Intinal-sprint.png)
+
+
+![](Documents/First-sprint.png)
+
+
+![](Documents/Final-sprint.png)
 ---
+### Risk Assessment
+![](Documents/first-rik.png)
+
+![](Documents/Risk-revisited.png)
+### Testing 
+
+![](Documents/Test1.png)
+![](Documents/ci-pipline-1.png)
+
+
+(Documents/Test2.png)
+![](Documents/ci-pipline-1.png)
+
+
+(Documents/Test3.png)
+![](Documents/ci-pipline-1.png)
+
+
+(Documents/Test4.png)
+![](Documents/ci-pipline-1.png)
 
 ## MIT License
 
