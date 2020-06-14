@@ -38,3 +38,7 @@ class TestViews(TestBase):
             ),
         )
         self.assertIn(b"Tesla Roadster", response.data)
+    
+    def test_carconfig_mock(requests_mock):
+        requests_mock.get('http://service4test.com', text='data')
+        assert 'data' == requests.get('http://service4test.com').text
