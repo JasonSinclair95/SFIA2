@@ -51,6 +51,7 @@ The Aim of this Project was to successfully Create an Application Which gives th
 The SFIA2 project is an application with the main focus is to generate a random car and weapon and display in the front end page. This is done by using 4 microservices which depend on each other to work. the front end of the application can be seen below.
 ![](Documents/Home-page.png)
 
+### Microservices
 * service 2 and 3 will utilise a function simultaneously which will make a request to a database   to gather a random item. The random item “car” will be stored as string in service 2 along with the weapon in service 3.
 
 * Service 4 will make a request to service 2 and 3 and use both variables and append them to a string.
@@ -63,6 +64,8 @@ Summary:
 To summarize a successful microservice application was created. The application is dockized utilizing docker swarm. Ansible provisions the environment using a playbook.yaml and the application is deployed using Jenkins pipeline and a robust system that allows continuous development and deployment without effecting the experience of the user. In other words, the application can be load balanced using webhooks from docker, Jenkins and GIT hub so that updates can be made whilst the application is still live. The whole application was tested with 100% coverage however using unit test. Along with this, risks were identified, and a risk assessment was created to take precaution whilst completing this project. Some issues have been stated in the Trello Board along with improvements to these issues in the conclusion. Learning from SFIA1 best practices was applied throughout. Some of which include using a feature primarily to develop my code, improvement to the reliability of the project by producing an 100% test coverage and showing how I persisted dated in the database by displaying this on a separate page in the frontend of the application. a display of this page can be found below.
 
 ![](Documents/persiting-data.png)
+
+---
 
 ## Architecture
 
