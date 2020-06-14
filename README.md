@@ -51,7 +51,7 @@ The Aim of this Project was to successfully Create an Application Which gives th
 The SFIA2 project is an application with the main focus is to generate a random car and weapon and display in the front end page. This is done by using 4 microservices which depend on each other to work. the front end of the application can be seen below.
 ![](Documents/Home-page.png)
 
-
+### My Method
 ### Microservices
 * service 2 and 3 will utilise a function simultaneously which will make a request to a database   to gather a random item. The random item “car” will be stored as string in service 2 along with the weapon in service 3.
 
