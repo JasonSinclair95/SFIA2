@@ -86,7 +86,7 @@ Illustrated below is 3 tables of which I planned to include in my project within
 
 ### Ci Pipeline
 
-This section will show the deployment on the application. Using Advanced Jenkins deployment, a Jenkins file was made to configure the application. The benefits of this is so that the configuration can be version controlled, and easily altered. This file will source the environment variables build the swarm of which the ansible playbook has prepared and then build all images using the docker compose file and push the latest of that to docker hub before deploying application. The three stages of the Jenkins build can also been seen below.
+This section will show the deployment on the application. Using Advanced Jenkins deployment, a Jenkins file was made to configure the application. The benefits of this is so that the configuration can be version controlled, and easily altered. This file will source the environment variables build the swarm of which the ansible playbook has prepared and then build all images using the docker compose file and push the latest of that to docker hub before deploying application. a total o 100 + builds were made to complete the applicatio and The three stages of the Jenkins build can  below.
 
 ![](Documents/Logs-Progress.png)
 
@@ -95,7 +95,7 @@ This section will show the deployment on the application. Using Advanced Jenkins
 ![](Documents/ci-pipline-1.png)
 
 
-![](Documents/ci-pipline-2.png)
+![](Documents/ci2-pipline-2.png)
 
 To elaborate on some of the technologies used in the CI pipeline is as follows:
 
