@@ -60,6 +60,8 @@ The SFIA2 project is an application with the main focus is to generate a random 
 * Service 1:  is the front end of the website where the both generated items will be seen. 
 
 
+
+
 ### Summary
 Summary:
 To summarize a successful microservice application was created. The application is dockized utilizing docker swarm. Ansible provisions the environment using a playbook.yaml and the application is deployed using Jenkins pipeline and a robust system that allows continuous development and deployment without effecting the experience of the user. In other words, the application can be load balanced using webhooks from docker, Jenkins and GIT hub so that updates can be made whilst the application is still live. The whole application was tested with 100% coverage however using unit test. Along with this, risks were identified, and a risk assessment was created to take precaution whilst completing this project. Some issues have been stated in the Trello Board along with improvements to these issues in the conclusion. Learning from SFIA1 best practices was applied throughout. Some of which include using a feature primarily to develop my code, improvement to the reliability of the project by producing an 100% test coverage and showing how I persisted dated in the database by displaying this on a separate page in the frontend of the application. a display of this page can be found below.
