@@ -92,7 +92,7 @@ This section will show the deployment on the application. Using Advanced Jenkins
 
 4 microservices are created including a 5th service Nginx. The Nginx tool can be seen to the far right of the diagram below with the main function to reverse proxy between Port 80 of the servers, and port 5000 of the frontend container. To assure communication of containers with in the swarm, a network has be created and applied for all.
 
-![](Documents/ci2.png)
+![](Documents/theci.png)
 
 
 ![](Documents/ci-pipline-1.png)
