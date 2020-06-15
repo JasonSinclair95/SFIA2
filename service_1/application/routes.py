@@ -9,9 +9,16 @@ from application.models import CarConfig
 @app.route('/', methods=['GET'])
 @app.route('/home')
 def home():
-        carconfigData = CarConfig.query.all()
+        
         response = requests.get('http://service4:5003/').text
-        return render_template('home.html', car=carconfigData, display=response, title='Home')
+        return render_template('home.html', display=response, title='Home')
+
+@app.route('/carconfigs')
+def carconfigs():
+        carconfigData = CarConfig.query.all()
+        return render_template('carconfigs.html', car=carconfigData, title='car configuration')
 
 
+
+	
 
