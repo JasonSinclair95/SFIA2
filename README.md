@@ -85,13 +85,26 @@ Illustrated below is 3 tables of which I planned to include in my project within
 ![](Documents/SFIA2-Entity-Relationship.png)
 
 
+### Nginx
+
+4 microservices are created including a 5th service Nginx. The Nginx tools can main function fror this application is to reverse proxy between Port 80 of the servers, and port 5000 of the frontend containers. the second function iis load ballance the application when new code is realesed 
+
+![](Documents/nginx.png)
+
+### Swarm
+
+ To assure communication of containers with in the swarm, a network has be created and applied for all services. below is the services nodes and contaniners created for the swarm.
+ 
+ ![](nodes/nginx.png)
+ ![](Documents/services.png)
+ ![](Documents/replicas.png)
+
+
 ### Ci Pipeline
 
-This section will show the deployment on the application. Using Advanced Jenkins deployment, a Jenkins file was made to configure the application. The benefits of this is so that the configuration can be version controlled, and easily altered. This file will source the environment variables build the swarm of which the ansible playbook has prepared and then build all images using the docker compose file and push the latest of that to docker hub before deploying application. a total o 100 + builds were made to complete the applicatio and The three stages of the Jenkins build can  below.
+This section will show the deployment on the application. Using Advanced Jenkins deployment, a Jenkins file was made to configure the application. The benefits of this is so that the configuration can be version controlled, and easily altered. This file will source the environment variables build the swarm of which the ansible playbook has prepared and then build all images using the docker compose file and push the latest of that to docker hub before deploying application. a total o 100 + builds were made to complete the application and The three stages of the Jenkins build can  below.
 
 ![](Documents/Logs-Progress.png)
-
-4 microservices are created including a 5th service Nginx. The Nginx tool can be seen to the far right of the diagram below with the main function to reverse proxy between Port 80 of the servers, and port 5000 of the frontend container. To assure communication of containers with in the swarm, a network has be created and applied for all.
 
 ![](Documents/theci.png)
 
