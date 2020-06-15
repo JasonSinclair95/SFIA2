@@ -8,7 +8,7 @@ DevOps Core Practical Project Specification
 --- 
 
 ### Materials:
-. [ Recruitment Website ](https://35.189.114.197)
+. [ SFIA2 Application ](https://35.189.114.197)
 . [ Trello Board ](https://trello.com/b/RjCzQ8SU/sfia)
 ---
 
