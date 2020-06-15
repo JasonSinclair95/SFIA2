@@ -2,13 +2,14 @@
 DevOps Core Practical Project Specification
 
 #### Objective: The personal objectives listed below relate directly to the skills listed in the **[ SFIA 7 framework ](https://www.sfia-online.org/en/framework/sfia-7)**
- 
+* create a service orientated application which generates an object upon predifined rules.
+* To work with an Agile mindset and by following the four main values of a DevOps Engineer. To Develop my Core skills and improve value in my skillset so that this can be leverged into the workplace.
  
 --- 
 
 ### Materials:
-
-
+. [ Recruitment Website ](https://35.189.114.197)
+. [ Trello Board ](https://trello.com/b/RjCzQ8SU/sfia)
 ---
 
 ### Contents
