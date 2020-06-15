@@ -75,6 +75,7 @@ To summarize a successful microservice application was created. The application 
 
 ![](Documents/persiting-data.png)
 
+[Back to the Top](#SFIA2)
 ---
 
 ## Architecture
@@ -94,7 +95,7 @@ Illustrated below is 3 tables of which I planned to include in my project within
 ### Swarm
 
  To assure communication of containers with in the swarm, a network has be created and applied for all services. below is the services nodes and contaniners created for the swarm.
- 
+
  ![](nodes/nginx.png)
  ![](Documents/services.png)
  ![](Documents/replicas.png)
@@ -133,9 +134,10 @@ o	MySQL: Allows for access of SQL Databases, as well as query-based functions*
 o	Groovy: to configure the jenkins file
 o   Linux: to write scripts for for jenkins to run 
 
+[Back to the Top](#SFIA2)
 ---
 
-## Project-Tracking
+## ProjectTracking
 
 ### Trello Board
 This board was used to highlight the user stories/tasks and keep the development of the project on track. the MOSCOW principle was applied by colour coding what must be done (red), should be done (green), could be done (blue) and would be done (yellow). Following a DevOps mindset and agile methodology the User Stories can be seen to the far left. from this the sprint and backlog was created and sorted in terms of priority using the MOSCOW principle. All task with a red label must have been complete for the CRUD Application to be successful. Below is pre sprint, frist sprint and final sprint.
@@ -149,6 +151,7 @@ As you can see some of the should have, have been completed. the main functional
 ![](Documents/Final-sprint.png)
 in conclusion all must haves had been met. there are some would have, could have and should haves left but this could be used to improve the application. for example including more nodes is a could have task which would have a major priority in scaling the application.
 
+[Back to the Top](#SFIA2)
 ---
 
 ## Testing 
@@ -170,6 +173,8 @@ the code for service 2 and 3 are identicle as each function pulls data from a da
 ![](Documents/Service4-test-result.png)
 
 service 4 was tested by seeing if the request from service 2 was the right string. be several time inorder for the test to pass. this test implies service f4 communicates with service 2 and 3 and also does retrieve data.
+
+[Back to the Top](#SFIA2)
 ---
 ### Risk Assessment
 The Risk assessment below contains some of the possible risks when creating an application during this cohort. The likelihood of the risk are scored using a colour code and given a number. red be very high risk, orange being high risk and yellow being moderately low risk. An overall score for each risk can be found in the last column.
@@ -178,6 +183,8 @@ The Risk assessment below contains some of the possible risks when creating an a
 the risk assessment was updated throughout out the project because of the exposure of new risk that could possibly occur. for example, the application breaking most of time the virtual machine was switched off or the broadband disconnected. Using proper practices like switching off machines reduces the amount of resources spent on the machine whilst it was inactive however this of course came with a cost. each time the firewall rules had to re-configured along with relevant webhooks resulting time being spent on configuration and not focused on continuous deployment. The procedure it should be considered to use flexible ip so that with this disruption the ip addreses stay fixed. this column was then added to the to the risk assessment to view the whole risk assessment click [here](Documents/RiskAssessment.xlsx).
 
 ![](Documents/Risk-revisited.png)
+
+[Back to the Top](#SFIA2)
 
 --- 
 
@@ -208,6 +215,8 @@ in conclusion to the identified issues, the improvements to be made to the appli
 * Along with further testing techniques, the testing could be automated. This can be done by creating another build stage and coding commands to test the application.
 * scaling out application. more nodes and more replicas could be created in order to servers many more users request at once.
 
+[Back to the Top](#SFIA2)
+---
 ## Installation guide
 
 ### Intallation guide Improvements
