@@ -171,6 +171,12 @@ the risk assessment was updated throughout out the project because of the exposu
 
 In conclusion, I followed the requirement that set on my Kanban Board and work with the MVP concept which resulted in a successful application which generates a Radom string utilizing data from a database and persisting this data in the front end. the application has been dockerised using of 5 microservices including nginx which allows access to the application through port 80 as well as successfully load balancing the application any time changes are made. Risks were identified along with clear documentation of the architecture in this application. Working on a feature branch allowed me to work without worrying about breaking the application as the master branch always had the working application from the most recent push. I now have a clear understanding how to dockerise, load balance and deploy my application through Jenkins pipeline and feel I have defiantly improved the value I can bring to the industry as an DevOps Engineer. a
 
+### Current imporvments
+based on SFIA1 some improvments have been made and outlined below:
+* using a feature branch to work primarly on instead of matser.
+* security feature increassed ie.. hiding all ports inside inventory.conf, export varible inside .bashrc
+* testing 100% of the application.
+
 ### Identified Issues
 
 some of the main issues faced whilst creating this application are as follows:
@@ -215,7 +221,7 @@ Jason Sinclair
 
 
 ## MIT License
-![](Documents/Feature.png)
+
 Copyright (c) 2020 JasonSinclair95
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
